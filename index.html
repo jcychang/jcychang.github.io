@@ -126,7 +126,7 @@
 							<div class="row">
 								<div class="4u 12u$(mobile)">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/homeCrop.png" alt="" /></a>
+										<a onclick="openNav('wash')" class="image fit"><img src="images/homeCrop.png" alt="" /></a>
 										<header>
 											<h3>Washington Redskins</h3>
 										</header>
@@ -134,13 +134,13 @@
 								</div>
 								<div class="4u 12u$(mobile)">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/RecordReaction.png" alt="" /></a>
+										<a onclick="openNav('real')" class="image fit"><img src="images/RecordReaction.png" alt="" /></a>
 										<header>
 											<h3>RealSense</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/white-flat-ipad-air-crop.png" alt="" /></a>
+										<a onclick="openNav('dunhuang')" class="image fit"><img src="images/white-flat-ipad-air-crop.png" alt="" /></a>
 										<header>
 											<h3>Dun-Huang Magao Cave</h3>
 										</header>
@@ -148,18 +148,18 @@
 								</div>
 								<div class="4u$ 12u$(mobile)">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/IOTMockupCrop.png" alt="" /></a>
+										<a onclick="openNav('wallcom')" class="image fit"><img src="images/IOTMockupCrop.png" alt="" /></a>
 										<header>
 											<h3>WallCom</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/process.png" alt="" /></a>
+										<a onclick="openNav('uicust')" class="image fit"><img src="images/process.png" alt="" /></a>
 										<header>
 											<h3>UI Customization</h3>
 										</header>
 									</article>
-									<!-- <article class="item">
+									<!--  <article class="item">
 										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 										<header>
 											<h3>Orci Convallis</h3>
@@ -171,7 +171,7 @@
 						</div>
 					</section>
 
-				<!-- Education-->
+				<!-- Education -->
 					<section id="resume" class="two">
 						<div class="container">
 
@@ -179,7 +179,7 @@
 								<h2>Resume</h2>
 							</header>
 
-							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
 							<h3>Education</h3>
 							<p>
@@ -325,6 +325,82 @@
 					</ul>
 
 			</div> -->
+
+		<!-- SideNav -->
+		<div id="washSidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('wash')">&times;</a>
+
+  			<div class="container">
+				<h2>Washington Wizards</h2>
+				<h3 style="color: #0066cc !important;">End-to-End Design of a Signup Page</h3><br>
+
+				<h3>Abstract</h3>
+				<p>The question was posed to the class, how do we get people to signup to attend a Washington Wizards game? Starting from the development of a persona, to wireframing a basic landing page, prototyping a high fidelity UI and interactive UI to an actual launch-able landing page, experience has been gained in all facets of a UI & UX design process.
+				</p>
+			</div>
+		</div>
+
+		<div id="realSidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('real')">&times;</a>
+
+  			<div class="container">
+				<h2>Realsense</h2>
+				<h3 style="color: #0066cc !important;">Prototyping Interactive Learning</h3><br>
+
+				<h3>Abstract</h3>
+				<p>Streaming services have forever changed the way users interact with digital media. To an extent, Twitch and YouTube have democratized access to multimedia/streaming platforms for everyone in the world. This democratization gives birth to a variety of shows each with their own special characteristics & purpose. Live shows are extremely varied in the content that is broadcasted, ranging from gaming to educational shows. Through the use of RealSense camera, facial tracking allows for a 3D perspective into the broadcasting content, which in turn allows for content to be manipulated for an immersive experience. Furthermore, the viewer is able to pick his/her own avatar to represent his/her virtual identity. With facial feature detection, users can provide emotion-based feedback that is representative of viewer experience.
+				</p>
+				<p>
+				In this project, we prototype the interactive system interface as a proof of concept for potential integration into present broadcasting platforms.
+				</p>
+			</div>
+		</div>
+
+		<div id="dunhuangSidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('dunhuang')">&times;</a>
+
+  			<div class="container">
+				<h2>Dun-Huang Magao Cave</h2>
+				<h3 style="color: #0066cc !important;">Immersive Virtual Touring Across Multiple Platforms</h3><br>
+
+				<h3>Abstract</h3>
+				<p>This project presents an immersive virtual touring system which contains plenty of media contents about two Dun-Huang caves: cave 61 and cave 254. The caves mentioned above are two of the most important caves which contain rich historical information and research data of Dun-Huang. We aim to build an intuitive cave browsing system on multiple platforms (tabletop, tablet, HMD) to allow users to tour the caves in details and learn the important historical contents.
+				</p>
+			</div>
+		</div>
+
+		<div id="wallcomSidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('wallcom')">&times;</a>
+
+  			<div class="container">
+				<h2>WallCom</h2>
+				<h3 style="color: #0066cc !important;">Designing IOT Interactions in Bus Stops</h3><br>
+
+				<h3>Abstract</h3>
+				<p>With the concept of internet-of-things becoming more integrated into mainstream technology design, the advent of various IOT devices and interactions is now here. In this project, we conceptualize a potential interaction at bus stops. Users who are at bus stop terminals are able to draw on the blank canvas with various color and brush strokes and can use this as a method of interacting with other users at differing bus stops. Potential exchange of traffic, weather or other information can be easily visualized with simple drawings.
+				</p>
+			</div>
+		</div>
+
+		<div id="uicustSidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('uicust')">&times;</a>
+
+  			<div class="container">
+				<h2>UI Customization</h2>
+				<h3 style="color: #0066cc !important;">A Mobile-Based Case Study</h3><br>
+
+				<h3>Abstract</h3>
+				<p>UI customization allows users to take control and make changes to the presentation of the interface to fit their own desires. Unfortunately, there are less customization features and researches on mobile apps compared to desktop applications.
+				</p>
+
+				<p>Through this case study, we identify the widespread needs for appearance-based customization on mobile applications from 32 participants with responses detailing over 200 needs by conducting a diary study. Furthermore, based on interviewing 16 power users, we developed the design space which includes three key dimensions of customization interfaces on mobile apps: manipulating interface directly, informing customization interaction and tweaking and undoing during customization.
+				</p>
+
+				<p>
+				We present a set of interactions to customize mobile apps, which are designed by professionals based on our exploration, that test the generative power of the design space.
+				</p>
+			</div>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

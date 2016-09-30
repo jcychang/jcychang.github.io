@@ -3,6 +3,34 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+var position;
+/* Open the sidenav */
+function openNav(element) {
+	if (element === "wash")
+    		document.getElementById("washSidenav").style.width = "100%";
+    	if (element === "real")
+    		document.getElementById("realSidenav").style.width = "100%";
+    	if (element === "dunhuang")
+    		document.getElementById("dunhuangSidenav").style.width = "100%";
+    	if (element === "wallcom")
+    		document.getElementById("wallcomSidenav").style.width = "100%";
+    	if (element === "uicust")
+    		document.getElementById("uicustSidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav(element) {
+	if (element === "wash")
+    		document.getElementById("washSidenav").style.width = "0";
+    	if (element === "real")
+    		document.getElementById("realSidenav").style.width = "0";
+    	if (element === "dunhuang")
+    		document.getElementById("dunhuangSidenav").style.width =  "0";
+    	if (element === "wallcom")
+    		document.getElementById("wallcomSidenav").style.width =  "0";
+    	if (element === "uicust")
+    		document.getElementById("uicustSidenav").style.width =  "0";
+}
 
 (function($) {
 

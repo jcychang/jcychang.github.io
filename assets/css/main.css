@@ -1640,7 +1640,7 @@
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+		/*border-bottom: dotted 1px rgba(128, 128, 128, 0.5);*/
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -1708,6 +1708,7 @@
 	}
 
 		.image img {
+			cursor: pointer;
 			display: block;
 			width: 100%;
 		}
@@ -1727,6 +1728,14 @@
 		.image.fit {
 			display: block;
 			width: 100%;
+		}
+
+		.image img:hover{
+			opacity:0.5;
+			-moz-transition: all 0.35s ease-in-out;
+			-webkit-transition: all 0.35s ease-in-out;
+			-ms-transition: all 0.35s ease-in-out;
+			transition: all 0.35s ease-in-out;
 		}
 
 		.image.featured {
@@ -2525,4 +2534,38 @@
 					margin-top: 0;
 				}
 
+	}
+
+	/* The side navigation menu */
+	.sidenav {
+		height: 100%; /* 100% Full-height */
+		width: 0; /* 0 width - change this with JavaScript */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Stay on top */
+		top: 0;
+		left: 0;
+		background-color: #fff; /* Black*/
+		overflow-x: hidden; /* Disable horizontal scroll */
+		padding-top: 60px; /* Place content 60px from the top */
+		transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.sidenav a:hover, .offcanvas a:focus{
+		color: #0066cc;
+	}
+
+	/* Position and style the close button (top right corner) */
+	.sidenav .closebtn {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		font-size: 100px;
+		margin-left: 50px;
+	}
+
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
 	}
