@@ -2032,16 +2032,12 @@
 		}
 
 			#header .icons a {
-				color: #41484c;
+				color: #fff;
 				-moz-transition: color 0.35s ease-in-out;
 				-webkit-transition: color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out;
 				transition: color 0.35s ease-in-out;
 			}
-
-				#header .icons a:hover {
-					color: #fff;
-				}
 
 	#logo {
 		position: relative;
